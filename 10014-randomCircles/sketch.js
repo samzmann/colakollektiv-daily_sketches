@@ -1,6 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * * *
 Daily sketch #14
-4/12/2017
+3/12/2017
 Samuel Mann
    - http://mistermann.me
    - https://www.instagram.com/colakollektiv/
