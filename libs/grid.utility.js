@@ -18,19 +18,21 @@ Access blocks (or cells) in this.blocks array.
 function grid(x, y, rc, size){
    this.x = x;
    this.y = y;
+   this.rc = rc;
    this.blocks = [];
 
    for (var i = 0; i < rc; i++) {
       var posY = i * (size/rc);
       for (var j = 0; j < rc; j++) {
          var posX = j * (size/rc);
-         this.blocks.push(new block(posX, posY, size/rc));
+         this.blocks.push(new block(posX, posY, size/rc, i + 1, j + 1));
       }
    }
 }
 
-function block(x, y, s){
+function block(x, y, s, cR, cC){
    this.x = x;
    this.y = y;
    this.s = s;
+   this.coordinates = createVector(cR, cC);
 }
